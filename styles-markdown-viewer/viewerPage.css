@@ -1,0 +1,91 @@
+body{
+    background-color: #144272;
+    color: white;
+}
+.flex-container{
+    display: flex;
+    align-items: stretch;
+    background-color: #0a2647e7;
+    color: white  
+}
+
+.flex-container > div {
+     
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  #displaySourceFile{
+    display: none;
+    max-height: 500px;
+    
+    overflow-y:auto;
+    background-color: white ;
+     border: 2px solid black; 
+     border-radius: 5px;
+      margin: 25px 10%;
+    }
+
+#displayMDHTML{
+    display: none;
+    border-radius: 20px;
+    margin: 15px 8%;
+    padding: 20px;
+ 
+}
+
+#sourceCodeTextArea{
+  width:100%;
+  height: 450px;
+  color: black;
+  order: none;
+ 
+}
+
+#spinner{
+  background-color: white;
+  display: none;
+}
+
+
+#searchOptionsDiv{
+  display: none;
+  border-radius: 0px 0px 20px 20px; 
+  background-color: white; 
+  max-height: 200px; 
+  overflow: auto; 
+}
+
+.formatSuggestion {
+  display: block;
+   font-size: 15px;
+   padding: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 10px;
+background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+width: 10px;
+background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #555;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/index_page.css">
+    
+    <script defer src="scripts/dom.js"></script>
+    <script defer src="scripts/htmlManipulation.js"></script>
+    <script defer src="scripts/handleServerEvents.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <style>
+       
+
+    </style>
+</head>
+<body >
+  
+  <div  id="spinner">
+  <div class="d-flex align-items-center" style="background-color: white;color: black;">
+    <strong >Loading...</strong>
+    <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+  </div>
+</div>
+
+  <div id="mainContent">
+ 
+    <h2 style="text-align: center; background-color: #0A2647;padding: 10px;"> MD to HTML Convertor </h2>
+    <div id="searchBarDiv"  >
+        <input type="text" class="form-control" id="searchDocumentInput" placeholder="Search Your Document Or File Here" style="border-radius: 50px;">
+
+    </div>
+    <div style="text-align: center;">
+      <button class="btn btn-primary" id="createNewFileBtn">Create New File</button>
+    </div>
+    <div id="table_div">
+   
+    <table class="table " style="text-align: center;">
+        <thead class="thead-dark sticky-top">
+          <tr>
+            <th >File Name</th>
+            <th >Date</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyListAllFiles">
+        </tbody>
+      </table>
+      
+  
+    
+    </div>
+  </div>
+</body>
+</html>

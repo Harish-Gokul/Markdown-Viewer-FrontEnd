@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-markdown-viewer/githhub.css"> 
+  <link rel="stylesheet" href="syntax.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+ 
+       <script defer src="scripts-markdown-viewer/highlight.js"></script>
+ 
+       <link rel="stylesheet" href="styles-markdown-viewer/highlight.css">       
+         
+
+    <link rel="stylesheet" href="styles-markdown-viewer/viewerPage.css">
+    <script defer src="scripts/marked.min.js"></script>
+    <script defer src="scripts-markdown-viewer/dom.js"></script>
+    <script defer src="scripts-markdown-viewer/fetchApi.js"></script>
+    <script defer src="scripts-markdown-viewer/scripts.js"></script>
+    <script defer src="scripts-markdown-viewer/HtmlManipulation.js"></script>
+</head>
+<body>
+    <div  id="spinner">
+        <div class="d-flex align-items-center" style="background-color: white;color: black;">
+          <strong >Loading...</strong>
+          <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+        </div>
+      </div>
+      
+      <div id="mainContent">
+
+    <div class="flex-container">
+        <div style="flex-grow: 1">
+            <a class="navbar-brand" href="index.html" style="color: white;">
+                <img src="styles-markdown-viewer/iconfinder-icon.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                MarkDown Viewer
+              </a>
+        </div>
+        <div style="flex-grow: 8 ">
+            <!-- border-radius: 20px 20px 0px 0px  - top curve -->
+            <!-- border-radius: 0px 0px 20px 20px - bottom curve -->
+            <div id="searchBox_Container">
+            <input type="text" class="form-control" id="searchDocumentInput" placeholder="search by heading name" style="border-radius: 20px">
+            <div id="searchOptionsDiv" >
+            </div>
+                
+            </div>
+        </div>
+        <div style="flex-grow: 1">
+            <button type="button" class="btn btn-outline-primary" id="commonBtn">Edit</button>
+           <button type="button" class="btn btn-outline-success" id="saveBtn">save</button>
+            <button type="button" class="btn btn-outline-danger" id="deleteBtn">Delete</button></div>
+    </div>
+ 
+    <div style="text-align: center;padding-top: 10px;">
+      
+    <h4 style="display: inline;" id="titleHtag">Title </h4><img style="padding-bottom: 5px;" src="styles-markdown-viewer/edit.png" id="renameIcon" height="25px" alt="editIcon">
+    </div>
+
+     </div>
+    <div id="displaySourceFile">
+        <textarea id="sourceCodeTextArea">
+
+        </textarea>
+    </div>
+    <div id="displayMDHTML" class="markdown-body">
+        <pre><code class="language-java">public class HelloWorld
+            {
+            
+              public static void main(String[] args) {
+                  System.out.println("Hello World!");
+              }
+            
+            }
+            </code></pre>
+    </div>
+</div>
+</body>
+</html>

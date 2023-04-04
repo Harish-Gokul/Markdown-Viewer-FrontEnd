@@ -1,0 +1,5 @@
+let tbodyListAllFiles = document.getElementById("tbodyListAllFiles")
+let searchDocumentInput = document.getElementById("searchDocumentInput")
+let mainConent = document.getElementById("mainContent")
+let spinner = document.getElementById("spinner")
+let createBtn = document.getElementById("createNewFileBtn")
